@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <script>
+      function validate() {
+    var password = document.getElementById("password").value;
+    var confirmPassword = document.getElementById("confirmPassword").value;
+  
+    if (password != confirmPassword) {
+      alert("Passwords do not match.");
+      return false;
+    }
+    return true;
+  }
+  function validateEmail(email) {
+  const re = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+  return re.test(email);
+}
+    </script>
+</head>
+
+<body>
+  <div id="forms">
+    <form onsubmit="return validate() ;return validateEmail(document.getElementById('email').value)" >
+        <label for="name">Name</label>
+        <input type="text" placeholder="Enter your name"> <br>
+        <label for="password">password</label>
+        <div>
+        <input type="password" placeholder="enter ur password" id="password" minlength="6" required> <br>
+      </div>
+      <label for="confirmpassword">confirmpassword</label>
+      <div>
+        <input type="password" placeholder="re-type password" id="confirmPassword" required>
+      </div>
+         <label for="email">Email</label>
+         <div>
+          <input type="email" placeholder="enter a valid email" id="email" required>
+         </div>
+      <button type="submit">Submit</button>
+    </form>
+    
+  </div>
+    
+</body>
+</html>

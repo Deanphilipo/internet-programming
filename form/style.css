@@ -1,0 +1,43 @@
+#show-password {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  #forms{
+    border: 3px solid #f1f1f1;
+  position: absolute;
+  left: 30%;
+  width: 35%;
+  margin: auto;
+  padding: 10px;
+  margin-left: 30px;
+  margin-top: 20%;
+  border-radius: 30px;
+  }
+  input[type=text],input[type=password],input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 30px;
+  }
+   /* Set a style for all buttons */
+ button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 30px;
+}
+  button:hover {
+    opacity: 0.8;
+    border-radius: 30px;
+  }
+  body{
+    background-image: url(log.jpg.jpg);
+   }
